@@ -7,13 +7,9 @@ import classNames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFlag, removeFlag } from '../../redux/slice/setClassName.js'
 
-
-
 const FormAddUser = () => {
    const dispatch = useDispatch();
    const active = useSelector(state => state.setClassName.active);
-
-
 
    const {
 
@@ -37,7 +33,6 @@ const FormAddUser = () => {
       reset()
       closeForm()
    }
-
 
    const closeForm = () => {
       dispatch(removeFlag())
