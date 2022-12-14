@@ -8,7 +8,7 @@ import Placeholder from '../placeholder/Placeholder'
 const UsersList = () => {
    const { data = [], isLoading } = useGetUsersQuery();
    const [deleteUser] = useDeleteUserMutation();
-   const [offset, setOffset] = useState(3);
+   const [offset, setOffset] = useState(9);
 
    const handleDeleteUser = async (id) => {
       await deleteUser(id).unwrap()
